@@ -7,11 +7,13 @@ d ={
     105:"Summer"
 }
 
-def find_stu(put_list):
-    stu_num = int(input("찾으시는 학생의 번호를 입력하세요"))
+def find_stu(put_list, stu_num):
     if stu_num in put_list:
         return put_list[stu_num]
     else:
         return "찾는 학생이 존재하지 않습니다."
 
-print(find_stu(d))
+
+stu_num = int(input("찾으시는 학생의 번호를 입력하세요"))
+print(find_stu(d, stu_num))
+print(find_stu(d, 3))
